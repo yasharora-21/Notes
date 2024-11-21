@@ -1,0 +1,55 @@
+.note-editor {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-editor input,
+.note-editor textarea,
+.note-editor select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.note-editor input:focus,
+.note-editor textarea:focus,
+.note-editor select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.note-editor textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.note-editor button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-editor button:hover {
+    background-color: #e67e22;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}

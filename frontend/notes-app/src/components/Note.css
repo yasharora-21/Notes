@@ -1,0 +1,64 @@
+.note {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.note.pinned {
+    border-left: 4px solid #f1c40f; /* Highlight pinned notes */
+}
+
+.note:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.note-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.note-actions button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.note-actions button:hover {
+    color: #3498db;
+}
+
+.note h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.note p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.note .note-type {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
